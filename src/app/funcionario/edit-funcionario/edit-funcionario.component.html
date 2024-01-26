@@ -1,0 +1,20 @@
+
+<div>
+  <h1 class="titulo">Editar Funcionário</h1>
+
+  <form (ngSubmit)="salvarEdicao()">
+    <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="funcionario.nome" name="nome" required>
+  </div>
+  <div>
+    <label for="rg">RG:</label>
+    <input type="text" id="rg" [(ngModel)]="funcionario.rg" name="rg" required>
+  </div>
+  <div>
+    <label for="foto">Foto:</label>
+    <input type="text" id="foto" [(ngModel)]="funcionario.foto" name="foto" required>
+  </div>
+    <button type="submit">Salvar Edição</button>
+  </form>
+</div>

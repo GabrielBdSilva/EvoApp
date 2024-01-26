@@ -1,0 +1,21 @@
+<div>
+  <h1 class="titulo">Lista de Funcionários</h1>
+
+  <div>
+    <input type="text" [(ngModel)]="termoPesquisa" placeholder="Pesquisar por nome ou RG" (input)="atualizarLista()">
+  </div>
+  <button class="cadastrar" (click)="cadastrarFuncionario()">Cadastrar Novo Funcionário</button>
+
+<ul>
+  <li class="list" *ngFor="let funcionario of funcionariosFiltrados">
+    {{ funcionario.nome }} ({{ funcionario.rg }})
+    <div>
+    <button class="editar" (click)="editarFuncionario(funcionario.id)">Editar</button>
+    <button class="excluir" (click)="excluirFuncionario(funcionario.id)">Excluir</button>
+  </div>
+  </li>
+</ul>
+
+
+
+</div>

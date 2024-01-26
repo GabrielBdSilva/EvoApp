@@ -1,0 +1,21 @@
+<div>
+  <h1 class="titulo">Departamentos EvoSystems</h1>
+
+  <button class="cadastrar" (click)="cadastrarDepartamento()">Cadastrar Novo Departamento</button>
+
+  <ul>
+
+    <li class="list" *ngFor="let departamento of departamentos">
+      {{ departamento.nome }} ({{ departamento.sigla }})
+      <div>
+        <button class="visualizar" (click)="verFuncionarios(departamento.id)">Funcionários ({{ departamento.sigla }})</button>
+        <button class="editar" (click)="editarDepartamento(departamento.id)">Editar ({{ departamento.sigla }})</button>
+        <button class="excluir" (click)="excluirDepartamento(departamento.id)">Excluir ({{ departamento.sigla }})</button>
+      </div>
+    </li>
+  </ul>
+
+
+
+</div>
+

@@ -1,0 +1,14 @@
+<h1 class="titulo">Cadastrar Departamento</h1>
+
+<form (submit)="cadastrarDepartamento()">
+  <div>
+  <label for="nome">Nome do Departamento:</label>
+  <input type="text" id="nome" [(ngModel)]="novoDepartamento.nome" name="nome" required>
+</div>
+<div>
+  <label for="sigla">Sigla do Departamento:</label>
+  <input type="text" id="sigla" [(ngModel)]="novoDepartamento.sigla" name="sigla" required>
+</div>
+  <button type="submit">Cadastrar</button>
+</form>
+

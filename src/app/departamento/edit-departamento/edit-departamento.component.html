@@ -1,0 +1,15 @@
+<h1 class="titulo">Editar Departamento</h1>
+
+<form (submit)="salvarEdicao()">
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="departamento.nome" name="nome" required>
+  </div>
+  <div>
+    <label for="sigla">Sigla:</label>
+    <input type="text" id="sigla" [(ngModel)]="departamento.sigla" name="sigla" required>
+  </div>
+
+  <button  type="submit">Salvar Edição</button>
+</form>
+

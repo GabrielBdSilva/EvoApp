@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #f2f2f2ff;
+}
+ul{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.router {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo{
+  text-align: center;
+  margin:50px
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3e52ad;
+  padding: 25px 15px;
+  margin: 30px;
+  border-radius: 20px;
+  color: #fff;
+  font: large bolder;
+}
+button{
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  background: #3e52ad;
+}
+.cadastrar{
+  background: #019b15;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+.visualizar{
+  background: #9b0582;
+}
+.editar{
+  background: #b5c202ce;
+
+}
+.excluir{
+  background: #9e0101;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input{
+    width: 300px;
+    height: 23px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
