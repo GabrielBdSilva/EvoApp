@@ -1,3 +1,6 @@
+para funcionar tudo corretamente vc terá que Descompactar o arquivo da API "EvoAPI" e rodar no visual studio com a url do arquivo program.cs apontando para o banco de dados
+caso não tenha terá que baixar o SQL2022-SSEI-Dev e o SSMS-Setup-ENU para configurar corretamente o banco que será salvo as informações de funcionarios e departamentos.
+<hr>
 # EvoSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
