@@ -1,5 +1,6 @@
-para funcionar tudo corretamente vc terá que Descompactar o arquivo da API "EvoAPI" e rodar no visual studio com a url do arquivo program.cs apontando para o banco de dados
-caso não tenha terá que baixar o SQL2022-SSEI-Dev e o SSMS-Setup-ENU para configurar corretamente o banco que será salvo as informações de funcionarios e departamentos.
+Para funcionar tudo corretamente vc terá que Descompactar o arquivo da API "EvoAPI" e rodar no visual studio com a url do arquivo program.cs apontando para o banco de dados
+caso não tenha terá que baixar o SQL2022-SSEI-Dev e o SSMS-Setup-ENU para configurar corretamente o banco de dadps que será salvo as informações de funcionarios e departamentos. 
+
 <hr>
 # EvoSite
 
