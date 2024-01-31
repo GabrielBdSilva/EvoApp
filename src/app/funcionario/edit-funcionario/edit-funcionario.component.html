@@ -13,7 +13,7 @@
   </div>
   <div>
     <label for="foto">Foto:</label>
-    <input type="text" id="foto" [(ngModel)]="funcionario.foto" name="foto" required>
+    <input type="file" id="fotoInput" [(ngModel)]="funcionario.foto"  name="foto" (change)="selecionarFoto($event)" accept="image/*" required/>
   </div>
     <button type="submit">Salvar Edição</button>
   </form>

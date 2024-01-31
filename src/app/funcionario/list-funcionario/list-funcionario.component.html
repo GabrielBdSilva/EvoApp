@@ -8,7 +8,13 @@
 
 <ul>
   <li class="list" *ngFor="let funcionario of funcionariosFiltrados">
-    {{ funcionario.nome }} ({{ funcionario.rg }})
+    <div class="perfil">
+    <img [src]="funcionario.foto" alt="Foto {{ funcionario.nome }}">
+      <div>
+        <h3>{{ funcionario.nome }} </h3>
+        <p>({{ funcionario.rg }})</p>
+      </div>
+    </div>
     <div>
     <button class="editar" (click)="editarFuncionario(funcionario.id)">Editar</button>
     <button class="excluir" (click)="excluirFuncionario(funcionario.id)">Excluir</button>

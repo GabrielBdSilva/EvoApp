@@ -29,6 +29,7 @@ ul{
   border-radius: 20px;
   color: #fff;
   font: large bolder;
+  text-align: center;
 }
 button{
   margin: 10px;
@@ -69,5 +70,6 @@ form input{
     display: flex;
     margin-bottom: 25px;
 }
+
 
 

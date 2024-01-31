@@ -11,6 +11,7 @@ export class EditFuncionarioComponent implements OnInit {
 
   funcionario: any = {};
   funcionarioId: number = 0;
+  fotoSelecionada: File | null = null;
 
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) { }
 
@@ -30,8 +31,22 @@ export class EditFuncionarioComponent implements OnInit {
 
 
   salvarEdicao(): void {
+    if (this.fotoSelecionada) {
+      const nomeArquivo = this.fotoSelecionada.name;
+      const caminhoDestino = `../../../assets/ft-func/${nomeArquivo}`;
+
+      this.funcionario.foto = caminhoDestino;
+    }
+
     this.apiService.atualizarFuncionario(this.funcionario).subscribe(() => {
       this.router.navigate(['/departamentos', this.funcionario.departamentoId, 'funcionarios']);
     });
+  }
+
+  selecionarFoto(event: any): void {
+    const files = event.target.files;
+    if (files && files.length > 0) {
+      this.fotoSelecionada = files[0];
+    }
   }
 }

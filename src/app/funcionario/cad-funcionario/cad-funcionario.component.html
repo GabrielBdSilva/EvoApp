@@ -8,9 +8,10 @@
     <label for="rg">RG:</label>
     <input type="text" id="rg" [(ngModel)]="novoFuncionario.rg" name="rg" required>
   </div>
+
   <div>
     <label for="foto">Foto:</label>
-    <input type="text" id="foto" [(ngModel)]="novoFuncionario.foto" name="foto" required>
+    <input type="file" id="fotoInput" (change)="selecionarFoto($event)" accept="image/*" />
   </div>
 
   <button type="submit">Cadastrar</button>

@@ -6,3 +6,19 @@ input{
   margin: auto;
   border: blue 1px solid;
 }
+img{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+.perfil{
+  display: flex;
+  align-items: center;
+}
+.perfil div{
+  text-align: center;
+  margin: 20px;
+}
+p, h3{
+  margin: 0;
+}
